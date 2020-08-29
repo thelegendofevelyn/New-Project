@@ -19,29 +19,29 @@ namespace New_Project
             int gues = Convert.ToInt32(guess);
             bool yn = false;
 
-            int counter = 0;
+            int counter = 1;
             while (yn == false)
             {
+                if (gues == r)
+                {
+                    yn = true;
+                } 
+                else if(gues <= r)
+                {
+                    Console.WriteLine("Guess higher!");
+                }
+                else if(gues <= r)
+                {
+                    Console.WriteLine("Guess lower!");
+                }
                 counter += 1;
                 Console.WriteLine("Guess Again!");
                 guess = Console.ReadLine();
                 gues = Convert.ToInt32(guess);
-                if (r == gues)
-                {
-                    yn = true;
-                } 
-                else if(r <= gues)
-                {
-                    Console.WriteLine("Guess higher!");
-                }
-                else if(r >= gues)
-                {
-                    Console.WriteLine("Guess lower!");
-                }
 
             }
             Console.WriteLine("Took " + counter + " tries");
-            Console.WriteLine("Good job! The number was " + x);
+            Console.WriteLine("Good job! The number was " + gues);
         }
     }
 }
