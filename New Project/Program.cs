@@ -29,15 +29,19 @@ namespace New_Project
                 else if(gues < r)
                 {
                     Console.WriteLine("Guess higher!");
+                    counter += 1;
+                    Console.WriteLine("Guess Again!");
+                    guess = Console.ReadLine();
+                    gues = Convert.ToInt32(guess);
                 }
                 else if(gues > r)
                 {
                     Console.WriteLine("Guess lower!");
+                    counter += 1;
+                    Console.WriteLine("Guess Again!");
+                    guess = Console.ReadLine();
+                    gues = Convert.ToInt32(guess);
                 }
-                counter += 1;
-                Console.WriteLine("Guess Again!");
-                guess = Console.ReadLine();
-                gues = Convert.ToInt32(guess);
 
             }
             Console.WriteLine("Took " + counter + " tries");
