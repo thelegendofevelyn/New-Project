@@ -22,13 +22,13 @@ namespace New_Project
                 Console.WriteLine("Guess Again!");
                 guess = Console.ReadLine();
                 gues = Convert.ToInt32(guess);
-                if (r == gues)
+                if (gues == r)
                 {
                     yn = true;
                 }
 
             }
-            Console.WriteLine("Good job! The number was " + x);
+            Console.WriteLine("Good job! The number was " + gues);
         }
     } //this is a change
 }
