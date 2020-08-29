@@ -26,11 +26,11 @@ namespace New_Project
                 {
                     yn = true;
                 } 
-                else if(gues <= r)
+                else if(gues < r)
                 {
                     Console.WriteLine("Guess higher!");
                 }
-                else if(gues <= r)
+                else if(gues > r)
                 {
                     Console.WriteLine("Guess lower!");
                 }
